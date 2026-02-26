@@ -55,7 +55,6 @@ License (LGPL)
 
 
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
