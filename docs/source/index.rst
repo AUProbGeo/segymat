@@ -7,7 +7,7 @@ Welcome to SegyMAT's documentation!
 ===================================
 
 © `Thomas Mejer Hansen <mailto:thomas.mejer.hansen@gmail.com>`__,
-2001-2019
+2001-2026
 
 SegyMAT is a set of m-files for reading and writing SEG-Y files from
 `Matlab <http://mathworks.,com>` and
