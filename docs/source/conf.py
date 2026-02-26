@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'SegyMAT'
-copyright = '2019, Thomas Mejer Hansen'
+copyright = '2026, Thomas Mejer Hansen'
 author = 'Thomas Mejer Hansen'
 
 # The short X.Y version
