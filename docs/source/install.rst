@@ -19,8 +19,8 @@ subfolder GUI), and save the path and you are done:
 
     >> pathtool
 
-To install without using the commandline, one can can manually add the
-install folder to Matlabs search path. If the install directory of
+To install without using the commandline, one can manually add the
+install folder to MATLAB's search path. If the install directory of
 SegyMAT is ``/usr/share/matlab/SegyMAT`` simply use:
 
 ::

@@ -218,7 +218,7 @@ MergeSegy {#\_MergeSegy} ---------
          MergeSegy(f,'merge.sgy')
      
      
-      Note: All imput segy files must have the same constant trace length
+      Note: All input SEGY files must have the same constant trace length
             The SEGY header of the merged SEGY file will be the SEGY header
             form the first input SEGY file.
      
@@ -366,7 +366,7 @@ ReadSegyTraceHeaderValue {#\_ReadSegyTraceHeaderValue}
 
 ::
 
-      ReadSegyTraceHeaderValue : Read a spedicifc trace header value
+      ReadSegyTraceHeaderValue : Read a specific trace header value
      
       Call:
          % By Name
@@ -405,7 +405,7 @@ ReadSu {#\_ReadSu} ------
       [Data,SuTraceHeaders,SuHeader]=ReadSu(filename,'jump',5);
       Read data in a CDP header range : 5000<cdp<5800 
       (change cdp to any other valid TraceHeader value)
-      [Data,SuTraceHeaders,SuHeader]=ReadSu(filename,'minmax','cdp'5000,5800);
+      [Data,SuTraceHeaders,SuHeader]=ReadSu(filename,'minmax','cdp',5000,5800);
      
       Combine any combination of the above
       [Data,SuTraceHeaders,SuHeader]=ReadSu(filename,'jump',1,'minmax','cdp',5300,5400);
@@ -418,7 +418,7 @@ ReadSuFast {#\_ReadSuFast} ----------
 
       ReadSuFast
      
-      PURPOSE : reads a SEISMIC section i  SU format in big endian format, 
+      PURPOSE : reads a SEISMIC section in SU format in big endian format,
                 strips the headers and returns the field in the matrix seis.
                 If nx==0 and nt<>0, nx will be computed
                 If nt==0 and nx<>0, nt will be computed           
@@ -439,7 +439,7 @@ Sac2Segy {#\_Sac2Segy} --------
       CALL :
         [Data,SegyTraceHeader,SegyHeader]=Sac2Segy(files_in,segyfile_out,varargin)
      
-        files_in : Either a single filename or a strcture of filenames
+        files_in : Either a single filename or a structure of filenames
                  files_in='d1.SAC';
                  or
                  files_in{1}='d1.SAC';
@@ -448,7 +448,7 @@ Sac2Segy {#\_Sac2Segy} --------
       Examples :
         [D,STH,SH]=Sac2Segy('','test.segy','FixedLengthTraceFlag',1);
                    converts all SAC files into one SEGY file (test.segy), using
-                   a FixedLengthTraceFlag of 1. This is compatible with mosty
+                   a FixedLengthTraceFlag of 1. This is compatible with most
                    any SEGY reader.
      
         [D,STH,SH]=Sac2Segy('','test.segy','FixedLengthTraceFlag',0);
@@ -574,9 +574,9 @@ WriteSegy {#\_WriteSegy} ---------
       WriteSegy('test.segy',seisdata,'revision',1); % SEG-Y Revision 1
       
       to use a specific Data Sampling Format use :
-      WriteSegy('test.segy',seisdata,'dsf',1); % IBM FLAOTING POINT
+      WriteSegy('test.segy',seisdata,'dsf',1); % IBM FLOATING POINT
      
-      Forice Revision 1 and IEEE Floating point :
+      Force Revision 1 and IEEE Floating point :
       WriteSegy('test.segy',seisdata,'dsf',5,'revision',1); 
      
       See also : WriteSegyStructure, WriteSu, WriteSuStructure
@@ -601,7 +601,7 @@ WriteSegyStructure {#\_WriteSegyStructure} ------------------
       To force the use of SEG Y revision 0 and data sampling format IEEE :
       WriteSegyStructure('datacube.segy',SegyHeader,SegyTraceHeaders,Data,'revision',1,'dsf',5);
      
-      See the dokumentation for for proper values of 'dsf'
+      See the documentation for proper values of 'dsf'
      
      
 
@@ -629,7 +629,7 @@ WriteSegyTraceHeaderValue {#\_WriteSegyTraceHeaderValue}
 
 ::
 
-      WriteSegyTraceHeaderValue : Write trace header valaue at specific location
+      WriteSegyTraceHeaderValue : Write trace header value at specific location
        
       Call:
      
@@ -669,9 +669,9 @@ WriteSu {#\_WriteSu} -------
       WriteSu('test.su',seisdata,'revision',1); % SEG-Y Revision 1
       
       to use a specific Data Sampling Format use :
-      WriteSu('test.su',seisdata,'dsf',1); % IBM FLAOTING POINT
+      WriteSu('test.su',seisdata,'dsf',1); % IBM FLOATING POINT
      
-      Forice Revision 1 and IEEE Floating point :
+      Force Revision 1 and IEEE Floating point :
       WriteSu('test.su',seisdata,'dsf',5,'revision',1); 
      
 

@@ -82,16 +82,16 @@ valid and supported values for the datasample format ``dsf``.
     >> WriteSegyStructure('datacube.segy',SegyHeader,
                            SegyTraceHeaders,Data,'revision',1,'dsf',5);
 
-WrityeSegyTraceHeaderValue
---------------------------
+WriteSegyTraceHeaderValue
+-------------------------
 
 ``WriteSegyTraceHeaderValue.m`` writes one trace header from an array
-into the Trace Hader of a SGY file.
+into the Trace Header of a SGY file.
 
 using keyword
 ~~~~~~~~~~~~~
 
-To read a read, edit and write the 'cdp' header values (see `Trace
+To read, edit and write the 'cdp' header values (see `Trace
 Header Definitions <format.html#TraceHeaderDef>`__ for a list of defined
 keys) use for example:
 
@@ -105,7 +105,7 @@ using location+precision
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 To manually update a trace header at a specific location, using a
-specific data type (precision) use for for example:
+specific data type (precision) use for example:
 
 ::
 
@@ -116,5 +116,5 @@ specific data type (precision) use for for example:
     WriteSegyTraceHeaderValue(filename,data,'pos',72,'precision','int32');
     d_header=ReadSegyTraceHeaderValue(filename,'pos',72,'precision','int32');
 
-Take a look at `Trace eEader Definictions <#_TraceHeaderDef>`__ to find
+Take a look at `Trace Header Definitions <#_TraceHeaderDef>`__ to find
 the position of all trace header values.

@@ -65,7 +65,7 @@ Revisions
 |          |             | the               |
 |          |             | TraceHeaderValues |
 |          |             | one by one. Much  |
-|          |             | faster that       |
+|          |             | faster than       |
 |          |             | reading the whole |
 |          |             | dataset.          |
 +----------+-------------+-------------------+
@@ -104,7 +104,7 @@ Revisions
 |          |             | for WriteSegy.m.  |
 +----------+-------------+-------------------+
 | 1.06     |             | Fixed a bug that  |
-|          |             | casue a fixed     |
+|          |             | cause a fixed     |
 |          |             | length of 5011    |
 |          |             | samples in        |
 |          |             | ReadSu.           |

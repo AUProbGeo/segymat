@@ -7,7 +7,7 @@ Misc
 wiggle
 ~~~~~~
 
-``wiggle.m`` is used to plot seismic data using using wiggle or variable
+``wiggle.m`` is used to plot seismic data using wiggle or variable
 area type plotting, optionally on top of an image plot of the data
 
 wiggle type:
@@ -82,7 +82,7 @@ Keyboard shortcuts:
 +--------------------+--------------------------------------+
 | a / arrow left     | Zoom in                              |
 +--------------------+--------------------------------------+
-| z / arrow right3   | Zoom out                             |
+| z / arrow right    | Zoom out                             |
 +--------------------+--------------------------------------+
 | h                  | toggle hiding plotting preferences   |
 +--------------------+--------------------------------------+
@@ -126,7 +126,7 @@ Viewing the textual file header
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ``GUIEditTextualFileHeader`` is a GUI for viewing the textual file
-header (either in ASCII of EBCDIC format) [editing is not yet
+header (either in ASCII or EBCDIC format) [editing is not yet
 implemented].
 
 ::

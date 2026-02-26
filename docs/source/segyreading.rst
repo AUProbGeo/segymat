@@ -21,9 +21,10 @@ the ``wiggle`` plotting function.
 ``Data`` is a 2D variable containing the seismic data of size
 ``[Nsamples x Ntraces]``.
 
-``SegyTraceHeaders``\ is a structure of size
-``[1,Ntraces]' structure containing all the header values from the traces. Type``\ SegyTraceHeaders\ ``to see a list of header information.``\ SegyTraceHeaders(9)\`,
-list all header names and values of trace number 9.
+``SegyTraceHeaders`` is a ``[1 x Ntraces]`` structure containing all the
+header values from the traces. Typing ``SegyTraceHeaders`` will list the
+header information. ``SegyTraceHeaders(9)`` lists all header names and
+values of trace number 9.
 
 ::
 
@@ -146,12 +147,12 @@ To read time slice 0.5 < t < 5
 
           >> [Data,SegyTraceHeaders,SegyHeader]=ReadSegy(filename,'trange',.5,3);
 
-Read data in a CDP header range : 5000> [Data,SegyTraceHeaders,SegyHeader]=
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Read data in a CDP header range (5000 < cdp < 5800)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
-      ReadSegy(filename,'minmax','cdp',5000,5800);
+    [Data,SegyTraceHeaders,SegyHeader]=ReadSegy(filename,'minmax','cdp',5000,5800);
 
 ::
 

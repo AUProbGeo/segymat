@@ -9,9 +9,9 @@ as defined by
 `SEG <http://seg.org/Publications/SEG-Technical-Standards>`__\  [1]_.
 
 SegyMAT also has support for reading and writing the format used by
-`CWP <http://www.cwp.mines.edu/>`__'s `Seismic
-Unix <http://www.cwp.mines.edu/cwpcodes/>`__ package (the SU format),
-which is merely a simplified version the SEG-Y format.
+`Seismic Unix <https://github.com/JohnWStockwellJr/SeisUnix>`__ (the SU format,
+documented at `<https://wiki.seismic-unix.org/start>`__),
+which is merely a simplified version of the SEG-Y format.
 
 A short description of the formats follows here.
 
@@ -19,9 +19,9 @@ Structure of a file
 -------------------
 
 A SEG-Y file consists of a 3600 byte header; a number of extended
-textual headers; a number trace headers+data.
+textual headers; a number of trace headers+data.
 
--  A 3200 byte Textual File Header, ASCII or EBCDIC formated.
+-  A 3200 byte Textual File Header, ASCII or EBCDIC formatted.
 
 -  A 400 byte Binary File Header
 
@@ -95,7 +95,7 @@ REVISION 1 (2002)
 +--------+-----------------------------------+-------------+
 | 4      | 4 Byte Fixed Point with Gain      | No          |
 +--------+-----------------------------------+-------------+
-| 5      | 4 Byte IEEE FLoating Pint         | Yes         |
+| 5      | 4 Byte IEEE Floating Point        | Yes         |
 +--------+-----------------------------------+-------------+
 | 6      | Not Specified                     |             |
 +--------+-----------------------------------+-------------+
@@ -119,7 +119,7 @@ precision can be listed by running
 
     TraceHeaderDef;
 
-which provides the folloing output:
+which provides the following output:
 
 ::
 
