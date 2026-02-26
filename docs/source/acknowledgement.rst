@@ -11,6 +11,5 @@ of an arbitrary set of TraceHeader values. (March 2007. ver 1.08 ->)
 ``sacsun2mat`` was written by F Tilmann who based his work on
 sac\_sun2pc\_mat by C. D. Saragiotis. from Matlab Central.
 
-Thanks to `Sourceforge <http://sourceforge.net/>`__ and
-`github <https://github.com/cultpenguin/segymat>`__ for hosting the
+Thanks to `Github <https://github.com/AUProbGeo/segymat>`__ for hosting the
 project.

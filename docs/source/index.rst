@@ -25,11 +25,8 @@ However structures make the implementation and maintenance easier, and
 the code (hopefully) easy to read. That said, some effort has been made
 to optimize SegyMAT for speed.
 
-The latest **stable** version of SegyMAT is available from
-`Sourceforge <https://sourceforge.net/projects/segymat/>`__.
-
-The current **development** version of SegyMAT is available from
-`Github <https://github.com/cultpenguin/segymat>`__.
+The current version of SegyMAT is available from
+`Github <https://github.com/AUProbGeo/segymat>`__.
 
 Quickstart:
 
